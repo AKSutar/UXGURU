@@ -1,0 +1,200 @@
+body {
+    font-family: rooney-sans, Avenir-Book, Calibri, sans-serif;
+    color: gray;
+    line-height: 1.4;
+    background-color: #cbf1f5;
+}
+
+.box {
+    background-color: whitesmoke;
+    height: 600px;
+    width: 600px;
+    border: 10px double #314e52;
+    padding: 50px;
+    margin: auto;
+    position: relative;
+}
+
+
+.speech {
+    border-radius: 5px;
+    margin: auto;
+    background: #2F4F4F;
+    width: 501px;
+    height: 30px;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+}
+
+.bubble:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #2F4F4F;
+    border-bottom: 10px solid transparent;
+    right: 20%;
+    bottom: -20px;
+}
+
+.container1 {
+    width: 89%;
+    background-color: #ccf2f4;
+    margin-top: 10px;
+    margin-left: 30px;
+    padding: 3px;
+    border: groove;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    width: 65%;
+    background-color: #4CAF50;
+}
+
+.container2 {
+    height: 420px;
+    width: 540px;
+    border: 3px dashed #6a2c70;
+    margin-left: 30px;
+    margin-top: 3px;
+    text-align: center;
+    font-size: 2em;
+    position: relative;
+    font-weight: 550;
+}
+
+.fund{
+    font-weight: 500;
+    font-size: 25px;
+    color: #3490de;
+}
+
+.input {
+    margin-left: 80px;
+    border-radius: 4px;
+    background: #a8d8ea;
+    width: 130px;
+    height: 28px;
+    padding: 20px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 40px;
+    color: #e84545;
+    clear: both;
+    border: none;
+}
+
+
+.button {
+    border-radius: 4px;
+    background-color: orange;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 550;
+    padding: 20px;
+    width: 190px;
+    margin: 5px;
+}
+
+
+.button span {
+    display: inline-block;
+    position: relative;
+}
+
+.button span:after {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+}
+
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.button1 {
+    margin: 10px;
+    margin-left: 70px;
+    border-radius: 4px;
+    background-color:#ff8c94;
+    color: brown;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px;
+    width: 190px;
+}
+
+/* Why we raise fund effect */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 40px;
+}
+
+.popup .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .box {
+        width: 70%;
+    }
+
+    .popup {
+        width: 70%;
+    }
+}

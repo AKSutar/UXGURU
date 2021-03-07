@@ -1,31 +1,35 @@
+/*Body*/
 body {
-    font-family: rooney-sans, Avenir-Book, Calibri, sans-serif;
-    color: gray;
+    font-family: "rooney-sans",
+        Avenir-Book,
+        Calibri,
+        sans-serif;
+    color: #424242;
     line-height: 1.4;
-    background-color: #cbf1f5;
 }
 
+
+/*Class*/
+
 .box {
-    background-color: whitesmoke;
     height: 600px;
     width: 600px;
-    border: 10px double #314e52;
     padding: 50px;
     margin: auto;
     position: relative;
 }
 
-
+/* Speech Bubble */
 .speech {
     border-radius: 5px;
-    margin: auto;
+    margin-left: 28px;
     background: #2F4F4F;
-    width: 501px;
+    width: 530px;
     height: 30px;
     padding: 20px;
     text-align: center;
     font-size: 25px;
-    font-weight: bold;
+    font-weight: 400;
     color: #fff;
     position: relative;
 }
@@ -43,158 +47,182 @@ body {
     bottom: -20px;
 }
 
+/*End of speech bubble */
+
+
+
+/*Progress Bar*/
 .container1 {
-    width: 89%;
-    background-color: #ccf2f4;
-    margin-top: 10px;
+    width: 94%;
+    margin-top: 15px;
     margin-left: 30px;
-    padding: 3px;
-    border: groove;
+    border: solid 3px;
+    border-color: #eaeaea;
 }
 
 .skills {
-    text-align: right;
     padding-top: 15px;
     padding-bottom: 15px;
-    color: white;
     width: 65%;
-    background-color: #4CAF50;
+    background-color: #EF5F3C;
+}
+ /* End of progress bar */
+
+
+ /* Container 2 */
+ .container2 {
+     border: 2px solid #eaeaea;
+     margin-left: 30px;
+     margin-top: 0px;
+     text-align: center;
+     font-size: 2em;
+     position: relative;
+     font-weight: 450;
+ }
+/* End of container 2 */
+
+
+/* Days left */
+.days {
+    color: #777;
+    margin-top: 25px;
+    margin-right: 8px;
+    display: inline-block;
+    text-align: left;
 }
 
-.container2 {
-    height: 420px;
-    width: 540px;
-    border: 3px dashed #6a2c70;
-    margin-left: 30px;
-    margin-top: 3px;
-    text-align: center;
-    font-size: 2em;
-    position: relative;
-    font-weight: 550;
+.left {
+    color: orange;
 }
+/* End of days left */
 
-.fund{
-    font-weight: 500;
-    font-size: 25px;
-    color: #3490de;
+
+/* Donors */
+.donors {
+    text-align: left;
+    margin-left: 48px;
+    color: #777;
+}
+/* End of donors */
+
+
+/* Donation input */
+
+.currency {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 27px;
+    color: #777;
 }
 
 .input {
-    margin-left: 80px;
+    margin-right: 35px;
     border-radius: 4px;
-    background: #a8d8ea;
-    width: 130px;
-    height: 28px;
-    padding: 20px;
     text-align: left;
-    font-weight: 500;
-    font-size: 40px;
-    color: #e84545;
-    clear: both;
-    border: none;
-}
-
-
-.button {
-    border-radius: 4px;
-    background-color: orange;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 550;
+    font-size: 30px;
+    font-weight: 600;
     padding: 20px;
-    width: 190px;
-    margin: 5px;
+    padding-left: 40px;
+    width: 150px;
+    border: solid #eaeaea;
+    height: 50px;
 }
+/* End of donation input */
 
 
-.button span {
-    display: inline-block;
+/* Give Now */
+.button3 {
+    border-radius: 4px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 650;
+    padding: 20px;
+    width: 213px;
+    border: 0px solid #eaeaea;
+    height: 92px;
+    color: #fff;
+    background-color: #1CBC2C;
+}
+/* End of Give Now */
+
+/* Why give $50 */
+
+.tooltip {
     position: relative;
+    color: #1E90FF;
+    margin-left: 45px;
+    margin-top: 13px;
+    text-align: left;
+    margin-bottom: 40px;
+
 }
-
-.button span:after {
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-}
-
-
-.button:hover span:after {
-    opacity: 1;
-    right: 0;
-}
-
-.button1 {
-    margin: 10px;
-    margin-left: 70px;
-    border-radius: 4px;
-    background-color:#ff8c94;
-    color: brown;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 20px;
-    width: 190px;
-}
-
-/* Why we raise fund effect */
 
 .overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
     visibility: hidden;
-    opacity: 0;
+    font-size: 20px;
+    display: inline-block;
 }
 
-.overlay:target {
-    visibility: visible;
-    opacity: 1;
-}
+.tooltip .overlay {
+    background-color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
 
-.popup {
-    margin: 70px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    width: 30%;
+    /* Position the tooltip */
     position: relative;
+    margin-left: 5px;
 }
 
-.popup h2 {
-    margin-top: 0;
-    color: #333;
-    font-size: 40px;
+.tooltip:hover .overlay {
+    display: inline-block;
+    visibility: visible;
+    font-size: 11px;
+    color: yellow;
+    width: 100px;
 }
 
-.popup .close {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
+/* End of Why give $50 */
+
+
+
+/* share buttons */
+.button1 {
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 20px;
+    width: 265px;
+    border: solid #eaeaea;
+    box-shadow: 0px 3px #eaeaea;
+    color: #777;
+    background-color: #fff;
 }
 
-
-.popup .content {
-    max-height: 30%;
-    overflow: auto;
+.button2 {
+    margin-top: 20px;
+    margin-left: 35px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 20px;
+    width: 265px;
+    border: solid #eaeaea;
+    box-shadow: 0px 3px #eaeaea;
+    color: #777;
+    background-color: #fff;
 }
+/* End of share buttons */
 
-@media screen and (max-width: 700px) {
-    .box {
-        width: 70%;
-    }
 
-    .popup {
-        width: 70%;
-    }
-}
+
+
+
+
+
+
+
